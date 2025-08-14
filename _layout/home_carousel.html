@@ -1,12 +1,18 @@
-<!-- carousel top images -->
 <div class="carousel-wrapper">
   <div id="carouselSingle" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/BG_canva_2-min.jpg" class="d-block w-100 img-fluid" alt="Alloy Design image">
+        <picture>
+          <!-- Mobile image -->
+          <source srcset="assets/mobile_img_BG_2-min.jpg" media="(max-width: 768px)">
+          
+          <!-- Desktop image fallback -->
+          <img src="assets/BG_canva_2-min.jpg" class="d-block w-100 img-fluid" alt="Alloy Design image">
+        </picture>
       </div>
     </div>
   </div>
 </div>
+
 
 
