@@ -1,57 +1,47 @@
-
-
-<!-- team html -->
-
-<!-- NOTE: To add new card section on "Team section" first create a file with the name of the said person with ".html" at the end, make sure to organize it and then copy the format
-    of the other team section html then change the name on the card section -->
+<!-- Team Section -->
 <section id="team">
   <div class="container">
+
+    <!-- Section Header -->
     <div class="row">
-        <div class="col-12 text-center p-2">
-          <h1>Our Team</h1>
+      <div class="col-12 text-center p-2">
+        <h1>Our Team</h1>
       </div>
     </div>
-  </div>
 
-  <div class="container">
+    <!-- Filter Buttons -->
     <div class="row">
-        <div class="col-lg-10 mx-auto text-center">
-
-            <ul class="filters text-dark  filter-button-group">
-              <li class="active" data-filter="*"><a href="#">All</a></li>
-              <li data-filter=".executive"><a href="#">EXECUTIVE</a></li>
-              <li data-filter=".research"><a href="#">RESEARCH</a></li>
-              <li data-filter=".undergrad"><a href="#">UNDERGRAD</a></li>
-              <li data-filter=".alumni"><a href="#">ALUMNI</a></li>
-            </ul>
-        </div>
-       
-        <div class="team" id="team-area">
-            {{ insert Team/Executive/Clod_Aranas.html }}
-            {{ insert Team/Research/Jubert_Pasco.html }}
-            {{ insert Team/Research/Aisa_Custodio.html }}
-
-
-            <!-- {{ insert Team/Research/Kuda_Nyamuchiwa.html }}
-            {{ insert Team/Research/Gyanaranjan_Mishra.html }}  -->
-
-
-
-          <!-- RESEARCH -->
-
-
-
+      <div class="col-lg-10 mx-auto text-center">
+        <ul class="filters text-dark filter-button-group list-inline">
+          <li class="list-inline-item active" data-filter="*"><a href="#">All</a></li>
+          <li class="list-inline-item" data-filter=".executive"><a href="#">Executive</a></li>
+          <li class="list-inline-item" data-filter=".research"><a href="#">Research</a></li>
+          <li class="list-inline-item" data-filter=".undergrad"><a href="#">Undergrad</a></li>
+          <li class="list-inline-item" data-filter=".alumni"><a href="#">Alumni</a></li>
+        </ul>
       </div>
+    </div>
+
+    <!-- Team Members -->
+    <div class="row team" id="team-area">
+
+      <!-- Executive -->
+      {{ insert Team/Executive/Clod_Aranas.html }}
+
+      <!-- Research -->
+      {{ insert Team/Research/Jubert_Pasco.html }}
+      {{ insert Team/Research/Aisa_Custodio.html }}
+
+      <!-- Optional: Uncomment to include more team members -->
+      <!--
+      {{ insert Team/Research/Kuda_Nyamuchiwa.html }}
+      {{ insert Team/Research/Gyanaranjan_Mishra.html }}
+      -->
+
+      <!-- Add more categories below as needed -->
+      <!-- {{ insert Team/Undergrad/Name.html }} -->
+      <!-- {{ insert Team/Alumni/Name.html }} -->
+
+    </div>
   </div>
-</div>
 </section>
- 
-
-
-
-
-
-
-
-
-
