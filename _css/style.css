@@ -326,6 +326,10 @@ nav.navbar {
   line-height: 2;
 }
 
+.about-img {
+  opacity: 0.85;
+}
+
 /* ===============================
    Hover Effect for Images
 ================================= */
