@@ -1,18 +1,20 @@
-<div class="carousel-wrapper">
-  <div id="carouselSingle" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <picture>
-          <!-- Mobile image -->
-          <source srcset="assets/mobile_img_BG_2-min.jpg" media="(max-width: 768px)">
-          
-          <!-- Desktop image fallback -->
-          <img src="assets/BG_canva_2-min.jpg" class="d-block w-100 img-fluid" alt="Alloy Design image">
-        </picture>
-      </div>
+<div class="carousel-wrapper mt-3">
+    <div id="carouselSingle" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <picture>
+                    <!-- Mobile image -->
+                    <source srcset="assets/mobile_img_BG_2-min.jpg" media="(max-width: 767.98px)">
+                    <!-- Tablet image (optional) -->
+                    <source srcset="assets/desktop_bg-min.jpg" media="(min-width: 768px) and (max-width: 1754.98px)">
+                    <!-- Desktop image -->
+                    <source srcset="assets/BG_canva_2-min.jpg" media="(min-width: 1755px)">
+                    <!-- Fallback image -->
+                    <img src="assets/desktop_bg-min.jpg" class="d-block w-100 img-fluid" alt="Descriptive text about the image content">
+                </picture>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-
 
 
