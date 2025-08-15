@@ -187,11 +187,17 @@ input[type="checkbox"]:checked ~ label::before {
 }
 
 /* 📌 Topbar */
-.topbar {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  z-index: 1000;
+.topbar { width: 100vw; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%); z-index: 1000; }
+
+.topbar a i {
+  
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.topbar a:hover i {
+  transform: scale(1.2); /* Slight zoom on hover */
+  color: #ff9d2d;
 }
 
 /* 🧾 Team Info & Modal */

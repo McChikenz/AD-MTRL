@@ -1,17 +1,41 @@
 <div class="carousel-wrapper">
   <div id="carouselSingle" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <picture>
-          <!-- Mobile image -->
-          <source srcset="assets/mobile_img_BG_2-min.jpg" media="(max-width: 768px)">
-          
-          <!-- Desktop image fallback -->
-          <img src="assets/BG_canva_2-min.jpg" class="d-block w-100 img-fluid" alt="Alloy Design image">
-        </picture>
+      <div class="carousel-item active position-relative">
+        <img src="assets/BG_test_1.png" class="d-block w-100 img-fluid" alt="Alloy Design image" style="opacity: 0.93 ;">
+        <h1 class="carousel-caption-text">Alloy Design & Materials Testing Research Lab</h1>
       </div>
     </div>
   </div>
 </div>
 
+<style>
+.carousel-caption-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff9d2d;
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  text-align: center;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
 
+.carousel-caption-text:hover {
+  background-color: rgba(255, 157, 45, 0.8); /* Orange glow */
+  color: #000000; /* Switch to black text */
+  transform: translate(-50%, -50%) scale(1.05); /* Slight zoom */
+  box-shadow: 0 0 20px rgba(255, 157, 45, 0.6); /* Orange shadow */
+}
+
+</style>
