@@ -1,60 +1,58 @@
 <!-- Team Section -->
 <section id="team">
-<div class="container">
+  <div class="container">
 
-  <!-- Section Header -->
-  <div class="row">
-    <div class="col-12 text-center p-2">
-      <h1>Our Team</h1>
+    <!-- Section Header -->
+    <div class="row">
+      <div class="col-12 text-center p-2">
+        <h1>Our Team</h1>
+      </div>
     </div>
-  </div>
 
-  <!-- Filter Buttons -->
+    <!-- Filter Buttons -->
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
         <ul class="filters filter-button-group list-inline text-dark">
-          <li class="list-inline-item active" data-filter="*">
-            <a href="#">All</a>
-          </li>
-          <li class="list-inline-item" data-filter=".executive">
-            <a href="#">Executive</a>
-          </li>
-          <li class="list-inline-item" data-filter=".research">
-            <a href="#">Research</a>
-          </li>
-          <li class="list-inline-item" data-filter=".undergrad">
-            <a href="#">Undergrad</a>
-          </li>
-          <li class="list-inline-item" data-filter=".alumni">
-            <a href="#">Alumni</a>
-          </li>
-          <li style="visibility: hidden;">
-          </li>
+          <li class="list-inline-item active" data-filter="*"><a href="#">All</a></li>
+          <li class="list-inline-item" data-filter=".executive"><a href="#">Executive</a></li>
+          <li class="list-inline-item" data-filter=".research"><a href="#">Research</a></li>
+          <li class="list-inline-item" data-filter=".undergrad"><a href="#">Undergrad</a></li>
+          <li class="list-inline-item" data-filter=".alumni"><a href="#">Alumni</a></li>
+          <li style="visibility: hidden;"></li>
         </ul>
       </div>
     </div>
 
-  <!-- Team Members -->
-  <div class="row team" id="team-area">
+    <!-- Team Members -->
+    <div class="team" id="team-area">
 
-    <!-- Executive -->
-     
-    {{ insert Team/Executive/Clod_Aranas.html }}
+      <!-- Executive & Research -->
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          {{ insert Team/Executive/Clod_Aranas.html }}
+        </div>
+        <div class="col-md-6 col-lg-4">
+          {{ insert Team/Research/Jubert_Pasco.html }}
+        </div>
+        <div class="col-md-6 col-lg-4">
+          {{ insert Team/Research/Aisa_Custodio.html }}
+        </div>
+         <div class="col-md-6 col-lg-4">
+       {{ insert Team/Research/Kuda_Nyamuchiwa.html }} 
+        </div>
+                <div class="col-md-6 col-lg-4">
+       {{ insert Team/Research/Gyanaranjan_Mishra.html }}
+        </div>
+      </div>
 
-    <!-- Research -->
-    {{ insert Team/Research/Jubert_Pasco.html }}
-    {{ insert Team/Research/Aisa_Custodio.html }}
+      <!-- More team members can be added below -->
+      <!-- Example: -->
+      <!-- {{ insert Team/Research/Aisa_Custodio.html }} -->
+      <!-- {{ insert Team/Research/Kuda_Nyamuchiwa.html }} -->
+      <!-- {{ insert Team/Research/Gyanaranjan_Mishra.html }} -->
+      <!-- {{ insert Team/Undergrad/Name.html }} -->
+      <!-- {{ insert Team/Alumni/Name.html }} -->
 
-    <!-- Optional: Uncomment to include more team members -->
-    <!-- {{ insert Team/Research/Kuda_Nyamuchiwa.html }} -->
-    <!-- {{ insert Team/Research/Gyanaranjan_Mishra.html }} -->
-
-    <!-- Add more categories below as needed -->
-    <!-- {{ insert Team/Undergrad/Name.html }} -->
-    <!-- {{ insert Team/Alumni/Name.html }} -->
-
+    </div>
   </div>
-
-</div>
-
 </section>
