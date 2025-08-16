@@ -585,11 +585,70 @@ input[type="checkbox"]:checked ~ label::before {
 }
 
 /* Card image container */
-.team-img {
-  position: relative;
-  width: 12.8rem;
-  transition: transform 0.3s ease-in-out;
+/* Base layout: flex container for centering */
+#team-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
+
+/* Card wrapper */
+.item {
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+/* Card itself */
+.card {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image inside card */
+.team-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Medium screens */
+@media (max-width: 768px) {
+  .team-img {
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: none;
+  }
+}
+
+/* Small screens */
+@media (max-width: 568px) {
+  .team-img {
+    width: 100%;
+  }
+
+
+  .card {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  #team-area .card {
+    margin-bottom: 10px;
+  }
+}
+
 
 /* Hover effects for large screens */
 @media (min-width: 1024px) {
@@ -601,43 +660,50 @@ input[type="checkbox"]:checked ~ label::before {
   }
 }
 
-/* Medium screens */
-@media (max-width: 768px) {
-  .team-img {
-    width: 10rem;
+
+
+/* Container */
+
+
+/* Overlay */
+.card-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 9;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover effects */
+@media (min-width: 1024px) {
+  .team-img:hover .card-overlay {
+    opacity: 1;
   }
-  .card {
-    width: 90%;
-    margin: 0 auto;
-    box-shadow: none;
+  .team-img:hover {
+    transform: scale(1.05);
   }
 }
 
-/* Small screens */
-@media (max-width: 568px) {
-  .team-img {
-    width: 8rem;
-  }
-  .card {
-    width: 100%;
-    margin: 0 auto;
-  }
+/* Responsive image */
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Extra small screens */
-@media (max-width: 400px) {
-  #team .card {
-    margin-bottom: 10px;
-  }
+/* Info button */
+.team-info button {
+  width: 100%;
+  border-radius: 0;
+  font-weight: 500;
 }
 
-.card {
-  transition: box-shadow 0.3s ease;
-}
-.card:hover {
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
+/*  */
 
 /* 🎠 Carousel */
 .carousel-wrapper {
