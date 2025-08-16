@@ -1,36 +1,31 @@
-(function(){
+(function ($) {
+  'use strict';
 
-    'use strict';
+  // Initialize Isotope on the team container
+  var $team = $('.team');
 
-    var $team = $('.team');
+  $team.isotope({
+    itemSelector: '.item',
+    layoutMode: 'fitRows'
+  });
 
-    $team.isotope({
-        itemSelector: '.item',
-        layoutMode: 'fitRows'
-    });
-
-    $('ul.filters > li').on('click', function(e){
-
+  // Filter buttons
+  $('ul.filters > li').on('click', function (e) {
     e.preventDefault();
 
-    var filter =$(this).attr('data-filter')
+    var filter = $(this).attr('data-filter');
 
     $('ul.filters > li').removeClass('active');
     $(this).addClass('active');
 
-    $team.isotope({filter: filter});
+    $team.isotope({ filter: filter });
+  });
 
+  // Move modals to body to avoid layout conflicts
+  if ($('.modal').length > 0) {
+    $('.modal').each(function () {
+      $(this).appendTo('body');
     });
-
-    if($(".modal").length>0) {
-        $(".modal").each(function() {
-            $(".modal").prependTo( "body" );
-        });
-    }
-
+  }
 
 })(jQuery);
-
-
-
-
