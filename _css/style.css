@@ -623,9 +623,9 @@ input[type="checkbox"]:checked ~ label::before {
   .team-img {
     width: 100%;
   }
+
   .item {
-  max-width: 300px;
-  padding: 0;
+    padding-left: 70px;
   }
 
   .card {
