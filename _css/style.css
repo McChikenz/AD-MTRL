@@ -618,34 +618,35 @@ input[type="checkbox"]:checked ~ label::before {
   height: auto;
 }
 
+
+
+
+/* Base */
+.team-img {
+  width: 100%; /* applies everywhere */
+}
+
 /* Medium screens */
 @media (max-width: 768px) {
-  .team-img {
-    width: 100%;
-  }
-
   .item {
-    padding-left: 70px;
+    padding: 15px 40px;
+    max-width: 300px;
+    margin: 0 auto;
   }
 
   .card {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-    box-shadow: none;
+    box-shadow: none; /* applies downward */
   }
 }
 
 /* Small screens */
 @media (max-width: 568px) {
-  .team-img {
-    width: 100%;
-  }
-
-
-  .card {
-    width: 100%;
-    max-width: 500px;
+  .item {
+    padding: 15px 20px;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
@@ -656,6 +657,7 @@ input[type="checkbox"]:checked ~ label::before {
     margin-bottom: 10px;
   }
 }
+
 
 
 /* Hover effects for large screens */
@@ -847,4 +849,23 @@ input[type="checkbox"]:checked ~ label::before {
   }
 }
 
+/* Projects section */
+.projects-box {
+  border: 3px solid #ccc; /* Light gray border */
+  border-radius: 8px;     /* Optional: rounded corners */
+  padding: 1rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08); /* Existing shadow */
+  background-color: #fff; /* Optional: ensure white background */
+}
+
+.projects-box:hover {
+  border-color: #dd790e;
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.owl-prev,
+.owl-next {
+  display: none !important;
+}
 
