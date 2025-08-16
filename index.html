@@ -8,6 +8,8 @@
     <meta name="description" content="A one-stop research facility in New Brunswick for materials characterization and mechanical testing">
     <meta name="author" content="Cyril Costes">
 
+    
+
     <!-- Favicons -->
     <link href="assets/favicon.ico" type="image/x-icon" rel="icon">
 
@@ -32,6 +34,37 @@
 
  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Alloy Design and Research Laboratory",
+  "name": "Alloy Design and Research Laboratory",
+  "url": "https://mcchikenz.github.io/ADRL/",
+  "description": "The ADRL focuses on alloy design, additive manufacturing, and materials testing at the University of New Brunswick.",
+  "keywords": ["alloy design", "materials testing", "additive manufacturing", "high-entropy alloys", "UNB research"],
+  "creator": {
+    "@type": "Academic and Government Organization",
+    "name": "University of New Brunswick",
+    "url": "https://www.unb.ca/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Clod Aranas",
+    "affiliation": {
+      "@type": "Academic",
+      "name": "University of New Brunswick"
+    },
+    "sameAs": "https://www.linkedin.com/in/clod-aranas-66bb4048/"
+  },
+  "sameAs": [
+    "https://www.unb.ca/bamlab/research-areas/",
+    "https://www.linkedin.com/company/admtrl/"
+  ]
+}
+</script>
+
         
  
 
@@ -113,5 +146,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script type="text/javascript" src="custom.js/appear.js"></script>
 <script type="text/javscript" src="main.js/bootstrap.bundle.min.js"></script>
 
+<script>
+  function toggleReadMore(button) {
+    const moreText = button.previousElementSibling.querySelector('.more-text');
+    if (moreText.classList.contains('d-none')) {
+      moreText.classList.remove('d-none');
+      button.textContent = 'Read less';
+    } else {
+      moreText.classList.add('d-none');
+      button.textContent = 'Read more';
+    }
+  }
+</script>
 </body>
 </html>
