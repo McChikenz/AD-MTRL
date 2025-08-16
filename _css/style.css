@@ -597,7 +597,7 @@ input[type="checkbox"]:checked ~ label::before {
 /* Card wrapper */
 .item {
   flex: 1 1 20px;
-  max-width: 240px;
+  max-width: 260px;
   /* Responsive padding-left for .item */
   padding-left: 10px;
 }
