@@ -41,25 +41,43 @@
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ResearchOrganization",
-      "name": "Alloy Design and Research Laboratory",
-      "url": "https://mcchikenz.github.io/ADRL/",
-      "description": "The ADRL focuses on alloy design, additive manufacturing, and materials testing at the University of New Brunswick.",
-      "parentOrganization": {
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchOrganization",
+    "name": "Alloy Design and Research Laboratory",
+    "url": "https://mcchikenz.github.io/ADRL/",
+    "description": "The ADRL focuses on alloy design, additive manufacturing, and materials testing at the University of New Brunswick.",
+    "parentOrganization": {
+      "@type": "EducationalOrganization",
+      "name": "University of New Brunswick",
+      "url": "https://www.unb.ca/"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Dr. Clod Aranas",
+      "affiliation": {
         "@type": "EducationalOrganization",
-        "name": "University of New Brunswick",
-        "url": "https://www.unb.ca/"
+        "name": "University of New Brunswick"
       },
-      "founder": {
-        "@type": "Person",
-        "name": "Dr. Clod Aranas",
-        "sameAs": "https://www.linkedin.com/in/clod-aranas-66bb4048/"
+      "sameAs": "https://www.linkedin.com/in/clod-aranas-66bb4048/"
+    },
+    "employee": {
+      "@type": "Person",
+      "name": "Cyril Costes",
+      "jobTitle": "Web Developer",
+      "description": "Developed and maintains the ADRL website",
+      "memberOf": {
+        "@type": "ResearchOrganization",
+        "name": "Alloy Design and Research Laboratory"
       }
-    }
-    </script>
+    },
+    "sameAs": [
+      "https://www.unb.ca/bamlab/research-areas/",
+      "https://www.linkedin.com/company/admtrl/"
+    ]
+  }
+  </script>
 
        {{ insert css_files.html }}
 
