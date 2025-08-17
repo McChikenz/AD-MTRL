@@ -388,7 +388,7 @@ nav.navbar {
 }
 
 /* 📘 Read More Toggle */
-.extra {
+/* .extra {
   display: none;
 }
 p {
@@ -416,7 +416,7 @@ input[type="checkbox"]:checked ~ label::before {
 .dots:has(~ input[type="checkbox"]:checked),
 .extra:has(~ input[type="checkbox"]:checked) {
   display: inline;
-}
+} */
 
 /* 🎨 Font Awesome Icon Color */
 .fa-color {
