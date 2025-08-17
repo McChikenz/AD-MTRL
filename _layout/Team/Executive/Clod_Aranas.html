@@ -1,71 +1,87 @@
 <!-- Team Card: Dr. Clodualdo Aranas -->
 <div class="item all executive">
-  <div class="card team-img h-100 text-center" data-bs-toggle="modal" data-bs-target="#modal_1">
-    
-    <!-- Profile Image -->
-    <img class="card-img-top img-fluid "
-         src="assets/Team/Clod_2x2.jpg"
-         alt="Dr. Clodualdo Aranas"
-         loading="lazy"
-         style=" object-fit: cover;">
+  <div class="card team-img h-100 text-center" data-bs-toggle="modal" data-bs-target="#modal_1" role="button" aria-label="View Dr. Clodualdo Aranas's profile">
 
-    <!-- Overlay Icon -->
+    <!-- Profile Image - Added dimensions and aspect ratio -->
+    <img class="card-img-top img-fluid"
+         src="assets/Team/Clod_2x2.jpg"
+         alt="Dr. Clodualdo Aranas portrait"
+         loading="lazy"
+         width="300"
+         height="300"
+         style="object-fit: cover; aspect-ratio: 1/1;">
+
+    <!-- Overlay Icon - Changed to span for accessibility -->
     <div class="card-overlay">
-      <a class="icon" title="View Profile">
+      <span class="icon" title="View Profile" aria-hidden="true">
         <i class="fa-solid fa-magnifying-glass fa-2x" style="color: #a4893d;"></i>
-      </a>
+      </span>
     </div>
 
-    <!-- Info Button -->
+    <!-- Info Section - Changed to div since card is already interactive -->
     <div class="team-info border-0 rounded-0 text-center py-2" style="background-color: #222222;">
-      <button class="btn text-light" type="button">
+      <div class="text-light">
         Director & Founder <br> Dr. Clodualdo Aranas
-      </button>
+      </div>
     </div>
   </div>
 
-  <!-- Modal Section -->
+  <!-- Modal Section - Changed to modal-lg for better readability -->
   <div class="modal fade" id="modal_1" tabindex="-1" aria-labelledby="modalLabel_1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content bg-dark text-light">
 
         <!-- Modal Header -->
-        <div class="modal-header border-0">
-          <h6 class="modal-title" id="modalLabel_1">Dr. Clodualdo Aranas</h6>
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fs-6" id="modalLabel_1">Dr. Clodualdo Aranas</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
-        <!-- Modal Body -->
-        <div class="modal-body text-center">
-          <img class="img-fluid rounded mb-3" src="assets/Team/Clod_2x2.jpg" alt="Dr. Clodualdo Aranas">
+        <!-- Modal Body - Added two-column layout -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img class="img-fluid rounded mb-3" 
+                   src="assets/Team/Clod_2x2.jpg" 
+                   alt="Dr. Clodualdo Aranas portrait"
+                   loading="lazy"
+                   width="300"
+                   height="300">
 
-          <!-- Social Icons -->
-          <div class="mb-3">
-            <a href="#" aria-label="GitHub">
-              <i class="fa-brands fa-github fa-color mx-1"></i>
-            </a>
-            <a href="https://www.linkedin.com/posts/clod-aranas-66bb4048_ill-be-presenting-in-the-gleebles-webinar-activity-6957733436300140545-l9ZJ/?originalSubdomain=ee" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin fa-color mx-1"></i>
-            </a>
-            <a href="#" aria-label="YouTube">
-              <i class="fa-brands fa-youtube fa-color mx-1"></i>
-            </a>
-            <a href="#" aria-label="Twitter">
-              <i class="fa-brands fa-twitter fa-color mx-1"></i>
-            </a>
+              <!-- Social Icons - Improved spacing and accessibility -->
+              <div class="mb-3">
+                <a href="#" aria-label="GitHub" class="text-decoration-none mx-1">
+                  <i class="fa-brands fa-github fa-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/posts/clod-aranas-66bb4048_ill-be-presenting-in-the-gleebles-webinar-activity-6957733436300140545-l9ZJ/?originalSubdomain=ee" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="LinkedIn"
+                   class="text-decoration-none mx-1">
+                  <i class="fa-brands fa-linkedin fa-2x" style="color: #0a66c2;"></i>
+                </a>
+                <a href="#" aria-label="YouTube" class="text-decoration-none mx-1">
+                  <i class="fa-brands fa-youtube fa-2x" style="color: #ff0000;"></i>
+                </a>
+                <a href="#" aria-label="Twitter" class="text-decoration-none mx-1">
+                  <i class="fa-brands fa-twitter fa-2x" style="color: #1da1f2;"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="col-md-8">
+              <!-- Bio Text -->
+              <div class="team-text">
+                <p>I am an Associate Professor and Principal Investigator in Mechanical Engineering at the University of New Brunswick. My research focuses on physical and mechanical metallurgy, materials characterization, and mechanical testing. Feel free to contact me for collaborations or project discussions!</p>
+              </div>
+            </div>
           </div>
-
-          <!-- Bio Text -->
-          <p class="team-text small">
-            I am an Associate Professor and Principal Investigator in Mechanical Engineering at the University of New Brunswick. My research focuses on physical and mechanical metallurgy, materials characterization, and mechanical testing. Feel free to contact me for collaborations or project discussions!
-          </p>
         </div>
 
         <!-- Modal Footer -->
-        <div class="modal-footer border-0">
+        <div class="modal-footer border-0 pt-0">
           <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
         </div>
-
       </div>
     </div>
   </div>

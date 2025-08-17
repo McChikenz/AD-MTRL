@@ -487,8 +487,8 @@ input[type="checkbox"]:checked ~ label::before {
 .filters {
   display: block;
   width: 100%;
-  padding: 30px 0;
-  font-size: 15px;
+  padding: 15px ;
+  font-size: 20px;
 }
 .filters > li {
   list-style: none;
@@ -504,7 +504,7 @@ input[type="checkbox"]:checked ~ label::before {
   padding: 2px 15px;
 }
 .filters > li > a:hover {
-  background-color: #505050;
+  background-color: #f3a65d;
 }
 .filters > li.active > a {
   color: #fff;
@@ -600,6 +600,7 @@ input[type="checkbox"]:checked ~ label::before {
   max-width: 250px;
   /* Responsive padding-left for .item */
   padding-left: 10px;
+  margin-top: 10px;
 }
 
   
