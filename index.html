@@ -21,43 +21,34 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
  <!-- Bootstrap CSS -->
- {{ insert css_files.html }}
 
  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Alloy Design and Research Laboratory",
-  "name": "Alloy Design and Research Laboratory",
-  "url": "https://mcchikenz.github.io/ADRL/",
-  "description": "The ADRL focuses on alloy design, additive manufacturing, and materials testing at the University of New Brunswick.",
-  "keywords": ["alloy design", "materials testing", "additive manufacturing", "high-entropy alloys", "UNB research"],
-  "creator": {
-    "@type": "Academic and Government Organization",
-    "name": "University of New Brunswick",
-    "url": "https://www.unb.ca/"
-  },
-  "author": {
-    "@type": "Person",
-    "name": "Dr. Clod Aranas",
-    "affiliation": {
-      "@type": "Academic",
-      "name": "University of New Brunswick"
-    },
-    "sameAs": "https://www.linkedin.com/in/clod-aranas-66bb4048/"
-  },
-  "sameAs": [
-    "https://www.unb.ca/bamlab/research-areas/",
-    "https://www.linkedin.com/company/admtrl/"
-  ]
-}
-</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ResearchOrganization",
+      "name": "Alloy Design and Research Laboratory",
+      "url": "https://mcchikenz.github.io/ADRL/",
+      "description": "The ADRL focuses on alloy design, additive manufacturing, and materials testing at the University of New Brunswick.",
+      "parentOrganization": {
+        "@type": "EducationalOrganization",
+        "name": "University of New Brunswick",
+        "url": "https://www.unb.ca/"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Clod Aranas",
+        "sameAs": "https://www.linkedin.com/in/clod-aranas-66bb4048/"
+      }
+    }
+    </script>
 
-        
+       {{ insert css_files.html }}
 
+  
 </head>
 <body> <!-- prevent viewing page source: oncontextmenu="return false" -->
 
@@ -71,13 +62,11 @@
 <!-- intro carousel-->
 {{ insert home_carousel.html }}
 
-
 <!-- About AD-mtrl section -->
 {{ insert About_ADMtrl.html }}
 
 <!-- BLOG AND News section -->
 <!-- {{ insert blog_and_news.html }} -->
-
 
 <!--  Simu mat section -->
 {{ insert resources.html }}
@@ -89,10 +78,8 @@
  {{ insert Team.html }}
 {{ insert TeamGallery.html }}
 
-
 <!-- Projects -->
 {{ insert projects.html}}
-
 
 <!-- collaborator  -->
 {{ insert collaborator.html}}
@@ -100,10 +87,8 @@
 <!-- Footer contact us section -->
 {{ insert footer.html}}
 
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>  -->
-
 
 <!-- JQuery cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
