@@ -8,5 +8,18 @@
   "dependencies": {
     "express": "^4.18.2",
     "highlight.js": "^11.11.1"
-  }
+  },
+  "description": "\u0000A\u0000D\u0000-\u0000M\u0000T\u0000R\u0000L\u0000   website \u0000 \u0000",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McChikenz/AD-MTRL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/McChikenz/AD-MTRL/issues"
+  },
+  "homepage": "https://github.com/McChikenz/AD-MTRL#readme"
 }
