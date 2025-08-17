@@ -2,7 +2,7 @@
 <div class="item all research">
   <div class="card team-img h-100 text-center" data-bs-toggle="modal" data-bs-target="#modal_kuda" role="button" aria-label="View Kudakwashe Nyamuchiwa's profile">
 
-    <!-- Profile Image with better lazy loading -->
+    <!-- Profile Image -->
     <img src="assets/Team/Kuda_2x2-min.jpg" 
          class="card-img-top img-fluid" 
          alt="Kudakwashe Nyamuchiwa portrait" 
@@ -11,14 +11,14 @@
          height="300"
          style="object-fit: cover; aspect-ratio: 1/1;">
 
-    <!-- Overlay Icon - improved accessibility -->
+    <!-- Overlay Icon -->
     <div class="card-overlay">
       <span class="icon" title="View Profile" aria-hidden="true">
         <i class="fa-solid fa-magnifying-glass fa-2x" style="color: #a4893d;"></i>
       </span>
     </div>
 
-    <!-- Info Button - semantic improvement -->
+    <!-- Info Section -->
     <div class="team-info border-0 rounded-0 text-center py-2" style="background-color: #222222;">
       <div class="text-light">
         PhD Student<br>Kudakwashe Nyamuchiwa
@@ -26,9 +26,9 @@
     </div>
   </div>
 
-  <!-- Modal Section - improved structure -->
+  <!-- Modal Section -->
   <div class="modal fade" id="modal_kuda" tabindex="-1" aria-labelledby="modal_kuda_label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg"> <!-- Changed to modal-lg for better readability -->
+    <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content bg-dark text-light">
 
         <!-- Modal Header -->
@@ -37,14 +37,16 @@
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
-        <!-- Modal Body - improved structure -->
+        <!-- Modal Body -->
         <div class="modal-body">
           <div class="row">
             <div class="col-md-4 text-center">
               <img src="assets/Team/Kuda_2x2.jpg" 
                    alt="Kudakwashe Nyamuchiwa portrait" 
                    class="img-fluid rounded mb-3"
-                   loading="lazy"> >
+                   loading="lazy"
+                   width="300"
+                   height="300">
               
               <!-- Social Icons -->
               <div class="mb-3">
@@ -59,7 +61,7 @@
             </div>
             
             <div class="col-md-8">
-              <!-- Bio Text - improved readability -->
+              <!-- Bio Text -->
               <div class="team-text">
                 <p>I am a PhD candidate in the ADMTRL-lab, with a bachelor's degree in Metallurgical Engineering from the University of Zimbabwe. My passion for materials science led me to pursue a master's degree at the Egypt-Japan University of Science and Technology, where I specialized in smart titanium-based alloys for biomedical applications.</p>
                 <div class="more-text collapse" id="kudaBioMore">
@@ -67,7 +69,7 @@
                 </div>
               </div>
 
-              <!-- Read More Toggle - Bootstrap compliant -->
+              <!-- Read More Toggle -->
               <button class="btn btn-link p-0 text-primary" 
                       type="button" 
                       data-bs-toggle="collapse" 

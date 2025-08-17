@@ -1,73 +1,94 @@
 <!-- Team Card: Aisa Custodio -->
 <div class="item all research">
-  <div class="card team-img h-100 text-center" data-bs-toggle="modal" data-bs-target="#modal_aisa">
+  <div class="card team-img h-100 text-center" data-bs-toggle="modal" data-bs-target="#modal_aisa" role="button" aria-label="View Aisa Custodio's profile">
 
-    <!-- Profile Image -->
+    <!-- Profile Image - Added dimensions and aspect ratio -->
     <img class="card-img-top img-fluid"
          src="assets/Team/Aisa_2x2-min.jpg"
-         alt="Aisa Custodio"
+         alt="Aisa Custodio portrait"
          loading="lazy"
-         style="object-fit: cover;">
+         width="300"
+         height="300"
+         style="object-fit: cover; aspect-ratio: 1/1;">
 
-    <!-- Overlay Icon -->
+    <!-- Overlay Icon - Changed to span for accessibility -->
     <div class="card-overlay">
-      <a class="icon" title="View Profile">
+      <span class="icon" title="View Profile" aria-hidden="true">
         <i class="fa-solid fa-magnifying-glass fa-2x" style="color: #a4893d;"></i>
-      </a>
+      </span>
     </div>
 
-    <!-- Info Button -->
+    <!-- Info Section - Changed to div since card is already interactive -->
     <div class="team-info border-0 rounded-0 text-center py-2" style="background-color: #222222;">
-      <button class="btn text-light" type="button">
-        PhD Student<br> Aisa Custodio
-      </button>
+      <div class="text-light">
+        PhD Student<br>Aisa Custodio
+      </div>
     </div>
   </div>
 
-  <!-- Modal Section -->
+  <!-- Modal Section - Changed to modal-lg for better readability -->
   <div class="modal fade" id="modal_aisa" tabindex="-1" aria-labelledby="modal_aisa_label" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content bg-dark text-light">
 
         <!-- Modal Header -->
-        <div class="modal-header border-0">
-          <h6 class="modal-title" id="modal_aisa_label">Aisa Custodio</h6>
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fs-6" id="modal_aisa_label">Aisa Custodio (PhD Student)</h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
-        <!-- Modal Body -->
-        <div class="modal-body text-center">
-          <img class="img-fluid rounded mb-3" src="assets/Team/Aisa_2x2.jpg" alt="Aisa Custodio">
+        <!-- Modal Body - Added two-column layout -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img class="img-fluid rounded mb-3"
+                   src="assets/Team/Aisa_2x2.jpg"
+                   alt="Aisa Custodio portrait"
+                   loading="lazy"
+                   width="300"
+                   height="300">
 
-          <!-- Social Icons -->
-          <div class="mb-3">
-            <a href="https://www.linkedin.com/in/aisa-grace-custodio-50aa5272/" target="_blank" rel="noopener" aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin fa-color mx-1"></i>
-            </a>
+              <!-- Social Icons - Improved accessibility -->
+              <div class="mb-3">
+                <a href="https://www.linkedin.com/in/aisa-grace-custodio-50aa5272/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Connect on LinkedIn"
+                   class="text-decoration-none">
+                  <i class="fa-brands fa-linkedin fa-2x" style="color: #0a66c2;"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="col-md-8">
+              <!-- Bio Text - Improved structure -->
+              <div class="team-text">
+                <p>I completed my undergraduate and master's degrees in Materials Engineering at the University of the Philippines-Diliman. I caught the "coating fever" during my time at an international aerospace company, where I contributed to the production of precision flight control components for commercial aircraft. Here, I gained experience in high velocity oxygen fuel (HVOF) processing of WC and T400 coatings.</p>
+                <div class="more-text collapse" id="aisaBioMore">
+                  <p>Presently, I am pursuing my PhD in Mechanical Engineering at the University of New Brunswick, conducting research in the Alloy Design and Materials Testing Research Laboratory, and Nanocomposites and Mechanics Laboratory. My focus lies in the development of high entropy alloy feedstock through mechanical alloying and its application in cold spray—making materials that can do extraordinary things! Outside my academic pursuits, I find joy in running and hiking adventures.</p>
+                </div>
+              </div>
+
+              <!-- Read More Toggle - Bootstrap compliant -->
+              <button class="btn btn-link p-0 text-primary"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#aisaBioMore"
+                      aria-expanded="false"
+                      aria-controls="aisaBioMore">
+                <span class="more-label">Read more</span>
+                <span class="less-label d-none">Read less</span>
+              </button>
+            </div>
           </div>
-
-          <!-- Bio Text -->
-          <div class="team-text small text-center">
-            I completed my undergraduate and master's degrees in Materials Engineering at the University of the Philippines-Diliman. I caught the “coating fever” during my time at an international aerospace company, where I contributed to the production of precision flight control components for commercial aircraft. Here, I gained experience in high velocity oxygen fuel (HVOF) processing of WC and T400 coatings.
-            <p class="more-text d-none">
-              Presently, I am pursuing my PhD in Mechanical Engineering at the University of New Brunswick, conducting research in the Alloy Design and Materials Testing Research Laboratory, and Nanocomposites and Mechanics Laboratory. My focus lies in the development of high entropy alloy feedstock through mechanical alloying and its application in cold spray—making materials that can do extraordinary things! Outside my academic pursuits, I find joy in running and hiking adventures.
-            </p>
-          </div>
-
-          <!-- Read More Toggle -->
-          <button class="read-more-toggle btn btn-link small text-primary p-0" onclick="toggleReadMore(this)">
-            Read more
-          </button>
         </div>
 
         <!-- Modal Footer -->
-        <div class="modal-footer border-0">
+        <div class="modal-footer border-0 pt-0">
           <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
         </div>
-
       </div>
     </div>
   </div>
 </div>
 
-<!-- Read More Toggle Script -->
